@@ -1,24 +1,20 @@
-# 1. Crie uma pasta e entre nela
+# 1. Cria uma pasta e entra nela
 mkdir projeto_voos
-cd projeto_voos
---------------------------------------------------------------------
-# 2. (Opcional, mas recomendado) Crie um ambiente virtual
-python -m venv venv
-venv\Scripts\activate  # No Windows
+cd projeto_voos 
 
 --------------------------------------------------------------------
 
-# 3. Instale o Django
+# 2. Instala o Django
 pip install django
 
 --------------------------------------------------------------------
 
-# 4. Crie o projeto
+# 3. Cria o projeto
 django-admin startproject sistema_reservas .
 
 --------------------------------------------------------------------
 
-# 5. Crie o app onde ficará a lógica
+# 4. Crie o app onde ficará a lógica
 python manage.py startapp reservas
 
 --------------------------------------------------------------------
