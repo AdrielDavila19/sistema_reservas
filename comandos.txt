@@ -1,0 +1,48 @@
+# 1. Crie uma pasta e entre nela
+mkdir projeto_voos
+cd projeto_voos
+--------------------------------------------------------------------
+# 2. (Opcional, mas recomendado) Crie um ambiente virtual
+python -m venv venv
+venv\Scripts\activate  # No Windows
+
+--------------------------------------------------------------------
+
+# 3. Instale o Django
+pip install django
+
+--------------------------------------------------------------------
+
+# 4. Crie o projeto
+django-admin startproject sistema_reservas .
+
+--------------------------------------------------------------------
+
+# 5. Crie o app onde ficará a lógica
+python manage.py startapp reservas
+
+--------------------------------------------------------------------
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+-------------//----------------//-------------//--------------//----
+
+Criar as tabelas no banco (migrações)
+
+python manage.py makemigrations
+python manage.py migrate
+
+-----------------------------------
+
+Criar superusuário para acessar o admin
+
+python manage.py createsuperuser
+
+Ele vai pedir:
+
+Usuário
+
+E-mail
+
+Senha 
+
+COMANDO PADRAO PARA RODAR O SERVIDOR: python manage.py runserver. (http://127.0.0.1:8000/admin/)
